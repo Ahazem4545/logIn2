@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container  min-vh-100 d-flex  justify-content-center align-items-center">
+    <div class=" container w-75 group ">
+        <h2 class="d-none">Welcome</h2>
+        <h3 class=""></h3>
+        <button class="btn btn-outline-info my-3  border border-1 border-info w-100 button-color d-none" id="logOutData" onclick="logOutData()">log Out</button>
+
+    <div class="text-center " id="containerAll">
+        <h1 class="py-4">Smart Login System</h1>
+        
+        <div class=" width-container m-auto">
+            <input type="text" class="form-control py-2 my-3 placeholder-color bg-transparent text-white " id="nameInput"  placeholder="Enter your name">
+            <input type="email" class="form-control py-2 my-3 placeholder-color  bg-transparent text-white"id="emailInput" placeholder="Enter your email">
+            <input type="password" class="form-control py-2 my-3 placeholder-color  bg-transparent text-white"id="passwordInput" placeholder="Enter password">
+            <p class="d-none text-danger" id="error">email already exists</p>
+            <p class="d-none text-success " id="sucess">sucess</p>
+            <p class="d-none text-danger " id="required">All inputs is required</p>
+            <button class="btn btn-outline-info my-3  border border-1 border-info w-100 button-color" id="buttonSign" onclick="signUpData()">Sign Up</button>         
+               <button class="btn btn-outline-info my-3  border border-1 border-info w-100 button-color d-none" id="buttonlogin" onclick="logInData()">Login</button>
+
+           <div class="d-flex justify-content-center align-content-center"><p class="fw-medium py-4 text-white pe-1" id="account">you have an account?</p><span class="fw-medium text-white under-line mt-4 " id="signin" onclick="signInAncor()">Signin </span>
+            <span class="fw-medium text-white under-line mt-4 d-none" id="signUp" onclick="signUpAncor()">SignUp </span>
+</div> 
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
